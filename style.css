@@ -1,0 +1,1007 @@
+:root{
+    --backgroundColor:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(99,99,203,1) 0%, rgba(173,215,170,1) 44%, rgba(0,212,255,1) 100%);
+    --textcolor:#fff;
+    --borderbackcolor:#ddac26;
+    --fontfamily: "Play", sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: var(--backgroundColor);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.all-container{
+    background-color: var(--backgroundColor);
+    margin: 80px;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+
+
+header{
+    padding: 10px;
+    color: #ef1a1a;
+    font-size: large;
+    grid-area: header;
+}
+header .logo span{
+    color: #342d17;
+    
+}
+
+header .logo{
+    font-size: 30px;
+    color: #28051f;
+    text-transform: uppercase;
+    font-family: var(--fontfamily);
+}
+header .logo .text-logo{
+    color: #42f510;
+    
+}
+header .logo span{
+    color: red;
+}
+
+
+.textSection{
+padding: 100px;
+grid-area: textSection;
+
+
+
+
+}
+.textSection .h1Text h1{
+    color: #9747e7;
+    font-size: 56px;
+line-height: 32px;
+font-family:  "Play", sans-serif;
+
+
+}
+.textSection .h3Text h6{
+    color:#0a3c46;
+    font-size: 20px;
+    font-family: var(--fontfamily);
+ 
+}
+section{
+    padding: 30px;
+
+
+}
+
+.section-em .txtsec h3{
+    padding: 50px;
+
+}
+.allSec{
+   padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "firstOne secondOne   fiveOne  "
+    "thirdOne Aboutme   myCV"
+    "footer footer footer"
+    
+    
+    ;
+    grid-gap: 1rem;
+
+}
+.allSec .firstOne{
+    background-color: #9378ae;
+    grid-area:firstOne ;
+    border-radius: 40px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.allSec .firstOne .text-h{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 20px;
+
+}
+.allSec .firstOne .text-h h2{
+    color: #2df82a;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        text-align: center;
+}
+.section-em  .allSec .firstOne:hover{
+    background-color: rebeccapurple;
+}
+
+
+.allSec .secondOne{
+    background-color: #ddac26;
+    grid-area: secondOne;
+    border-radius: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+.allSec .secondOne .text-h{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 20px;
+
+}
+.allSec .secondOne .text-h h2{
+    color: #2df82a;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        text-align: center;
+}
+.section-em  .allSec .secondOne:hover{
+    background-color: rebeccapurple;
+}
+
+
+.allSec .thirdOne{
+    border-radius: 40px;
+    background-color: #fff;
+    grid-area: thirdOne;
+    text-align: center;
+    text-decoration: none;
+}
+
+.allSec .thirdOne .text-h{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 20px;
+
+}
+.allSec .thirdOne .text-h h2{
+    color: #2df82a;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        text-align: center;
+}
+.section-em  .allSec .thirdOne:hover{
+    background-color: rebeccapurple;
+}
+
+
+
+
+
+
+
+
+
+
+
+.allSec .fiveOne{
+    border-radius: 40px;
+    background-color: antiquewhite;
+    grid-area: fiveOne;
+    text-align: center;
+    text-decoration: none;
+}
+.allSec .fiveOne .text-h{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 20px;
+
+}
+.allSec .fiveOne .text-h h2{
+    color: #2df82a;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        text-align: center;
+}
+.section-em  .allSec  .fiveOne:hover{
+    background-color: rebeccapurple;
+
+}
+
+
+
+
+.allSec .Aboutme{
+    border-radius: 40px;
+    background-color: beige;
+    grid-area: Aboutme;
+    text-align: center;
+    text-decoration: none;
+}
+.allSec .Aboutme .text-h{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 20px;
+
+}
+.allSec .Aboutme .text-h h2{
+    color: #2df82a;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        text-align: center;
+}
+.section-em .allSec .Aboutme:hover{
+    background-color: rebeccapurple;
+
+}
+
+.allSec .myCV{
+    border-radius: 40px;
+    background-color: beige;
+    grid-area: myCV;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.allSec .myCV .text-h{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 20px;
+
+}
+.allSec .myCV .text-h h2{
+    color: #2df82a;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        text-align: center;
+}
+.section-em .allSec .myCV:hover{
+    background-color: rebeccapurple;
+
+}
+
+
+
+
+
+
+
+.textSection .h1Text h1{
+    font-family:  "Play", sans-serif;
+    text-align: center; 
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: #1c38d5;
+    font-size: 50px;
+    font-weight: 800;
+    
+    
+    }
+    
+
+
+
+/* end section content */
+/* footer information */
+.footer{
+    grid-area: footer;
+    font-family: var(--fontfamily);
+    
+}
+.footer span{
+    color: #0a870a;
+    text-transform: uppercase
+}
+
+.footer .infofooter .h4footer{
+    padding: 10px;
+
+    
+}
+.footer .infofooter .h4footer  .contact{
+    background-color: #d9e0d7;
+  margin-left: 10px;
+    padding: 1px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.footer .infofooter .h4footer  .contact:hover{
+    background-color:#b0b5ae ;
+}
+.footer .infofooter .h5footer{
+    padding: 10px;
+}
+.footer .infofooter .h5footer a{
+    background-color: #fdb8ec;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 1px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.footer .infofooter .h5footer a:hover{
+    background-color: #b0b5ae;
+}
+/* End footer information */
+
+
+
+/* responsive for other media */
+@media only screen and (max-width:550px){
+    html,body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+    .all-container{
+        text-align: center;
+        background-color: var(--backgroundColor);
+        margin: 11px;
+        padding: 10px;
+        box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    }
+
+    header .logo{
+        color: #28051f;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        font-size: 15px;
+    }
+    header .logo .text-logo{
+        color: #42f510;
+        
+    }
+    header .logo span{
+        color: red;
+    }
+   
+    
+    .textSection .h1Text h1{
+        font-family:  "Play", sans-serif;
+        text-align: center; 
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        color: #1c38d5;
+        font-size: 50px;
+        font-weight: 800;
+        
+        
+        }
+    .textSection .h3Text h6{
+        color: #0a3c46;
+        line-break: initial;
+        font-size: 12px;
+        font-family: var(--fontfamily);
+       
+       
+     
+    }
+
+    .section-em .allSec{
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "firstOne firstOne firstOne firstOne"
+        "secondOne secondOne secondOne secondOne "
+        "thirdOne thirdOne thirdOne thirdOne "
+        "fiveOne fiveOne fiveOne fiveOne"
+        "Aboutme Aboutme Aboutme Aboutme"
+        "myCV myCV myCV myCV"
+        "footer footer footer footer"
+       
+            
+        ;
+        text-align: center;
+    }
+    .section-em  .allSec .firstOne{
+        background-color: #9378ae;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        grid-area: firstOne;
+    }
+    .section-em  .allSec .firstOne:hover{
+        background-color: rebeccapurple;
+    }
+    .section-em .allSec .secondOne{
+        background-color: #10a00d;
+        text-decoration: none;
+        border-radius: 8px;
+        grid-area: secondOne;
+        
+    }
+    .section-em  .allSec .secondOne:hover{
+        background-color: rebeccapurple;
+    }
+    .section-em .allSec .thirdOne{
+        background-color: #68b219bb;
+        text-decoration: none;
+        border-radius: 8px;
+        grid-area: thirdOne;
+    }
+    .section-em  .allSec .thirdOne:hover{
+        background-color: rebeccapurple;
+    }
+.section-em .allSec .Aboutme{
+    grid-area: Aboutme;
+    background-color: #68b219bb;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.section-em .allSec .Aboutme:hover{
+    background-color: rebeccapurple;
+
+}
+
+    .text-h{
+        display: flex;
+      justify-content: space-around;
+      text-align: center;
+       margin: 8px 5px;
+    }
+    
+
+    .text-h h2{
+        color: #2df82a;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        text-align: center;
+        padding: 4px ;
+       
+    }
+    .text-h h1{
+       background-color: rgb(250, 173, 173);
+       padding: 5px 30px 5px 30px ;
+       border-radius: 40%;
+       text-align: center;
+       margin-top: 10px;
+       
+
+        
+    }
+    .section-em .txtsec h3{
+        font-family: var(--fontfamily) ;
+     font-size: 30px;
+    }
+    .section-em  .allSec  .fiveOne{
+        grid-area: fiveOne;
+        background-color: #68b219bb;
+        text-decoration: none;
+        border-radius: 8px;
+       
+    }
+    .section-em  .allSec  .fiveOne:hover{
+        background-color: rebeccapurple;
+
+    }
+
+    .section-em  .allSec .myCV{
+        background-color: #9378ae;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        grid-area: myCV;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer{
+        grid-area: footer;
+        font-family: var(--fontfamily);
+        
+    }
+    .footer span{
+        color: #0a870a;
+        text-transform: uppercase
+    }
+    
+    .footer .infofooter .h4footer{
+        padding: 10px;
+
+        
+    }
+    .footer .infofooter .h4footer  .contact{
+        background-color: #d9e0d7;
+      margin-left: 10px;
+        padding: 1px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+    .footer .infofooter .h4footer  .contact:hover{
+        background-color:#b0b5ae ;
+    }
+    .footer .infofooter .h5footer{
+        padding: 10px;
+    }
+    .footer .infofooter .h5footer a{
+        background-color: #fdb8ec;
+        text-decoration: none;
+        margin-left: 10px;
+        padding: 1px 30px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+    .footer .infofooter .h5footer a:hover{
+        background-color: #b0b5ae;
+    }
+    
+    
+
+
+
+}
+/* responsive for other media */
+
+
+/* start small screen */
+
+@media (min-width: 768px) and (max-width: 991px){
+    html,body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+    .all-container{
+        text-align: center;
+        background-color: var(--backgroundColor);
+        margin: 11px;
+        padding: 10px;
+        box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    }
+
+    header .logo{
+        color: #28051f;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        font-size: 15px;
+    }
+    header .logo .text-logo{
+        color: #42f510;
+        
+    }
+    header .logo span{
+        color: red;
+    }
+   
+    
+    .textSection .h1Text h1{
+    font-family:  "Play", sans-serif;
+    text-align: center; 
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: #1c38d5;
+    font-size: 50px;
+    font-weight: 800;
+    
+    
+    }
+    .textSection .h3Text h3{
+        color: #0a3c46;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     
+    }
+
+    .section-em .allSec{
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "firstOne firstOne firstOne firstOne"
+        "secondOne secondOne secondOne secondOne "
+        "thirdOne thirdOne thirdOne thirdOne "
+        "fiveOne fiveOne fiveOne fiveOne"
+        "Aboutme Aboutme Aboutme Aboutme"
+        "myCV myCV myCV myCV"
+        "footer footer footer footer"
+       
+            
+        ;
+        text-align: center;
+    }
+    .section-em  .allSec .firstOne{
+        background-color: #9378ae;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        grid-area: firstOne;
+    }
+    .section-em  .allSec .firstOne:hover{
+        background-color: rebeccapurple;
+    }
+    .section-em .allSec .secondOne{
+        background-color: #10a00d;
+        text-decoration: none;
+        border-radius: 8px;
+        grid-area: secondOne;
+        
+    }
+    .section-em  .allSec .secondOne:hover{
+        background-color: rebeccapurple;
+    }
+    .section-em .allSec .thirdOne{
+        background-color: #68b219bb;
+        text-decoration: none;
+        border-radius: 8px;
+        grid-area: thirdOne;
+    }
+    .section-em  .allSec .thirdOne:hover{
+        background-color: rebeccapurple;
+    }
+.section-em .allSec .Aboutme{
+    grid-area: Aboutme;
+    background-color: #68b219bb;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.section-em .allSec .Aboutme:hover{
+    background-color: rebeccapurple;
+
+}
+
+    .text-h{
+        display: flex;
+      justify-content: space-around;
+      text-align: center;
+       margin: 8px 5px;
+    }
+    
+
+    .text-h h2{
+        color: #2df82a;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        text-align: center;
+        padding: 4px ;
+       
+    }
+    .text-h h1{
+       background-color: rgb(250, 173, 173);
+       padding: 5px 30px 5px 30px ;
+       border-radius: 40%;
+       text-align: center;
+       margin-top: 10px;
+       
+
+        
+    }
+    .section-em .txtsec h3{
+        font-family: var(--fontfamily) ;
+     font-size: 30px;
+    }
+    .section-em  .allSec  .fiveOne{
+        grid-area: fiveOne;
+        background-color: #68b219bb;
+        text-decoration: none;
+        border-radius: 8px;
+       
+    }
+    .section-em  .allSec  .fiveOne:hover{
+        background-color: rebeccapurple;
+
+    }
+
+    .section-em  .allSec .myCV{
+        background-color: #9378ae;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        grid-area: myCV;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer{
+        grid-area: footer;
+        font-family: var(--fontfamily);
+        
+    }
+    .footer span{
+        color: #0a870a;
+        text-transform: uppercase
+    }
+    
+    .footer .infofooter .h4footer{
+        padding: 10px;
+
+        
+    }
+    .footer .infofooter .h4footer  .contact{
+        background-color: #d9e0d7;
+      margin-left: 10px;
+        padding: 1px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+    .footer .infofooter .h4footer  .contact:hover{
+        background-color:#b0b5ae ;
+    }
+    .footer .infofooter .h5footer{
+        padding: 10px;
+    }
+    .footer .infofooter .h5footer a{
+        background-color: #fdb8ec;
+        text-decoration: none;
+        margin-left: 10px;
+        padding: 1px 30px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+    .footer .infofooter .h5footer a:hover{
+        background-color: #b0b5ae;
+    }
+    
+    
+
+
+
+}
+/* End small screen */
+
+
+/* start medium screens */
+@media (max-width: 767px) {
+    html,body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+    .all-container{
+        text-align: center;
+        background-color: var(--backgroundColor);
+        margin: 11px;
+        padding: 10px;
+        box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    }
+
+    header .logo{
+        color: #28051f;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        font-size: 15px;
+    }
+    header .logo .text-logo{
+        color: #42f510;
+        
+    }
+    header .logo span{
+        color: red;
+    }
+   
+    
+    .textSection .h1Text h1{
+    font-family:  "Play", sans-serif;
+    text-align: center; 
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: #1c38d5;
+    font-size: 50px;
+    font-weight: 800;
+    
+    
+    }
+    .textSection .h3Text h3{
+        color: #0a3c46;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     
+    }
+
+    .section-em .allSec{
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "firstOne firstOne firstOne firstOne"
+        "secondOne secondOne secondOne secondOne "
+        "thirdOne thirdOne thirdOne thirdOne "
+        "fiveOne fiveOne fiveOne fiveOne"
+        "Aboutme Aboutme Aboutme Aboutme"
+        "myCV myCV myCV myCV"
+        "footer footer footer footer"
+       
+            
+        ;
+        text-align: center;
+    }
+    .section-em  .allSec .firstOne{
+        background-color: #9378ae;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        grid-area: firstOne;
+    }
+    .section-em  .allSec .firstOne:hover{
+        background-color: rebeccapurple;
+    }
+    .section-em .allSec .secondOne{
+        background-color: #10a00d;
+        text-decoration: none;
+        border-radius: 8px;
+        grid-area: secondOne;
+        
+    }
+    .section-em  .allSec .secondOne:hover{
+        background-color: rebeccapurple;
+    }
+    .section-em .allSec .thirdOne{
+        background-color: #68b219bb;
+        text-decoration: none;
+        border-radius: 8px;
+        grid-area: thirdOne;
+    }
+    .section-em  .allSec .thirdOne:hover{
+        background-color: rebeccapurple;
+    }
+.section-em .allSec .Aboutme{
+    grid-area: Aboutme;
+    background-color: #68b219bb;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.section-em .allSec .Aboutme:hover{
+    background-color: rebeccapurple;
+
+}
+
+    .text-h{
+        display: flex;
+      justify-content: space-around;
+      text-align: center;
+       margin: 8px 5px;
+    }
+    
+
+    .text-h h2{
+        color: #2df82a;
+        text-transform: uppercase;
+        font-family: var(--fontfamily);
+        text-align: center;
+        padding: 4px ;
+       
+    }
+    .text-h h1{
+       background-color: rgb(250, 173, 173);
+       padding: 5px 30px 5px 30px ;
+       border-radius: 40%;
+       text-align: center;
+       margin-top: 10px;
+       
+
+        
+    }
+    .section-em .txtsec h3{
+        font-family: var(--fontfamily) ;
+     font-size: 30px;
+    }
+    .section-em  .allSec  .fiveOne{
+        grid-area: fiveOne;
+        background-color: #68b219bb;
+        text-decoration: none;
+        border-radius: 8px;
+       
+    }
+    .section-em  .allSec  .fiveOne:hover{
+        background-color: rebeccapurple;
+
+    }
+
+    .section-em  .allSec .myCV{
+        background-color: #9378ae;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        grid-area: myCV;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer{
+        grid-area: footer;
+        font-family: var(--fontfamily);
+        
+    }
+    .footer span{
+        color: #0a870a;
+        text-transform: uppercase
+    }
+    
+    .footer .infofooter .h4footer{
+        padding: 10px;
+
+        
+    }
+    .footer .infofooter .h4footer  .contact{
+        background-color: #d9e0d7;
+      margin-left: 10px;
+        padding: 1px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+    .footer .infofooter .h4footer  .contact:hover{
+        background-color:#b0b5ae ;
+    }
+    .footer .infofooter .h5footer{
+        padding: 10px;
+    }
+    .footer .infofooter .h5footer a{
+        background-color: #fdb8ec;
+        text-decoration: none;
+        margin-left: 10px;
+        padding: 1px 30px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+    .footer .infofooter .h5footer a:hover{
+        background-color: #b0b5ae;
+    }
+    
+    
+
+
+
+}
+/* End medium screens */
